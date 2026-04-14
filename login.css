@@ -1,0 +1,136 @@
+*{
+    Margin: 0;
+    Padding: 0;
+    Font-family: ‘Poppins’, sans-serif;
+    Box-sizing: border-box;
+}
+
+.container{
+    Width: 100%;
+    Height: 100vh;
+    Background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(‘nature.jpg’);
+    Background-position: center;
+    Background-size: cover;
+    Display: flex;
+    Justify-content: center;
+    Align-items: center;
+
+    position:absolute;
+    z-index: 1;
+    background-image: 
+        url(Free\ \ Books\,\ Retro\,\ Library\ Background\ Images\,\ Books\ Background\ Photo\ Background\ PNG\ and\ Vectors.jpeg);
+            background-size: 95%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: black;
+
+            
+
+}
+
+.form-box{
+    Width: 90%;
+    Max-width: 450px;
+    Min-width: 350px;
+    background-color: white;
+    opacity: 1;
+    background: white;
+    backdrop-filter: blur(20px);
+    position: relative;
+    z-index: 2;
+    Padding: 55px;
+    Text-align: center;
+    Border-radius: 10px;
+    Box-shadow: -2px 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+.form-box h1{
+    Font-size: 30px;
+    Color: green;
+}
+
+.form-box .underline{
+    Width: 30px;
+    Height: 4px;
+    Background: green;
+    Margin: 10px auto 50px auto;
+    Border-radius: 5px;
+    Transition: transform .5s;
+}
+
+.input-field{
+    position: relative;
+    width: 100%;
+    Background: #eeeaea;
+    Margin: 15px 0;
+    Border-radius: 10px;
+    Display: flex;
+    Align-items: center;
+    Max-height: 60px;
+    Transition: max-height 0.5s;
+    Overflow: hidden;
+}
+
+.input-field input:focus{
+    background-color: #d9d9d9;
+}
+
+.input-field:focus-within{
+    background-color: #555;
+    color: white;
+    transition: background-color 0.3s ease;
+
+}
+
+.input-field input{
+    flex: 1;
+    Width: 100%;
+    Background: transparent;
+    Border: 0;
+    Outline: 0;
+    Padding: 18px 15px;
+}
+
+.input-field i{
+    Margin-left: 15px;
+    flex-shrink: 0;
+    Color: #999;
+}
+
+Form p{
+    Text-align: left;
+    Font-size: 13px;
+}
+
+Form p a{
+    Text-decoration: none;
+    Color: green;
+}
+
+.btn-field{
+    Width: 100%;
+    Display: flex;
+    Justify-content: space-between;
+}
+
+.btn-field button{
+    Flex-basis: 48%;
+    Background: #555;
+    Color: white;
+    Height: 40px;
+    Border-radius: 20px;
+    Border: 0;
+    Outline: 0;
+    Cursor: pointer;
+    Transition: background 1s;
+}
+
+.input-group{
+    Height: 280px;
+}
+
+Button.disable{
+    Background: #eeeaea;
+    Color: #555;
+}
+

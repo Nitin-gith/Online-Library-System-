@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+  <!-- background -->
+  <div id="bg">
+    <div id="welcome" >Welcome to Online Library!</div>
+    <!-- header -->
+    <div id="head">
+
+      <div class="menugrp">
+        <button id="menu" onclick="togglemenu()">
+        <i class="fa-solid fa-bars"></i> Menu
+      </button>
+      </div>
+
+      <div class="searchgrp">
+        <img src="pnga-stack-books-isolated-white-background.jpg" alt="Icon" id="bookicon">
+        <input id="search" placeholder="Search Books...." ><button id="searchbtn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <div class="accountgrp">
+        <button id="account">My account
+        <i class="fa-solid fa-user"></i>
+      </button>
+      </div>
+    </div>
+
+    <!-- main content -->
+    <div id="main">
+
+      <div class="section1">
+
+        <div class="title1">
+          <i class="fa-solid fa-circle-arrow-right" id="icon1"></i>
+        <h2 id="sf">Student's Favourite</h2>
+        </div>
+        <div class="container">
+          <div id="student-fav"></div>
+        </div>
+      </div>
+
+      <div class="section2">
+
+        <div class="title2">
+          <i class="fa-solid fa-circle-arrow-right" id="icon2"></i>
+        <h2 id="sf">Teacher's Favourite</h2>
+        </div>
+        <div class="container">
+          <div id="teacher-fav"></div>
+        </div>
+      </div>
+
+      <div class="section3">
+
+        <div class="title3">
+          <i class="fa-solid fa-circle-arrow-right" id="icon3"></i>
+        <h2 id="sf">Recently Added</h2>
+        </div>
+        <div class="container">
+          <div id="newly-added"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- stat boxes -->
+    <div class="stat">
+      <div id="div1" class="counter">
+        <h1 class="count" data-target="12765">0</h1>
+        <p>Number of Books</p>
+      </div>
+      <div id="div2" class="counter">
+        <h1 class="count" data-target="7546">0</h1>
+        <p>Students Registered</p>
+      </div>
+      <div id="div3" class="counter">
+        <h1 class="count" data-target="1325">0</h1>
+        <p>Teachers Registered</p>
+      </div>
+      <div id="div4" class="counter">
+        <h1 class="count" data-target="195">0</h1>
+        <p>New Visitors Every Week</p>
+      </div>
+      <div id="div5" class="counter">
+        <h1 class="count" data-target="425">0</h1>
+        <p>Books Currently Borrowed</p>
+      </div>
+      <div id="div6" class="counter">
+        <h1 class="count" data-target="160">0</h1>
+        <p>Books Added this Month</p>
+      </div>
+
+    </div>
+
+ 
+    <!-- footer -->
+    <div id="footer">
+      <div class="column1">
+        <ul>
+          <p>Contact Us</p>
+          <a href="#"><i class="fa-solid fa-envelope"></i> Email</a>
+          <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+        </ul>
+      </div>
+
+      <div class="column2">
+        <ul>
+          <p>Terms and Policies</p>
+          <a href="#">Library Membership Policy</a>
+          <a href="#">Borrowing Rules</a>
+          <a href="#">Liability Disclaimer</a>
+        </ul>
+      </div>
+
+      <div class="column3">
+        <ul>
+          <p>Library Hours</p>
+          <a>Open from 9am to 5pm on weekdays</a>
+          <a>Closed on Saturday , Sunday and Gazetted Holidays</a>
+        </ul>
+      </div>
+    </div>
+
+    <!-- menu panel -->
+     <div id="sidepanel" class="side-panel">
+      <div class="close-btn" onclick="togglemenu()">&times;</div>
+      <ul>
+        <li><a href="#">All Books</a></li>
+        <li><a href="#issuelist">Issue List</a></li>
+        <li><a href="#">Returned Books</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+     </div>
+
+    <!-- my account pannel -->
+     <div id="accountbox" class="account-box">
+      <p>Welcome to account pannel.</p>
+      <h3 id="myacc">My Account</h3>
+      <p id="data">User ID / Email : <span id="user"></span></p>
+      <button id="logoutbtn">Logout</button>
+      <button id="closeaccbox">Close</button>
+     </div>
+
+     <!-- book click panel -->
+      <div id="bookmodal" class="book-modal">
+        <div class="book-modal-content">
+          <span id="closemodal" class="close">&times;</span>
+          <img id="modaltn" src="" alt="Book Thumbnail">
+          <h2 id="modalt">Book Title</h2>
+          <p id="modala"><strong>Author(s) : </strong></p>
+          <p id="modald"><strong>Description : </strong></p>
+          <button id="issuebtn">Add to Issue List</button>
+        </div>
+      </div>
+
+
+      <!-- book search result panel -->
+       <div id="search-results">
+        <button id="close-search">&times;</button>
+       </div>
+
+
+
+
+      <!-- issue list -->
+       <div id="ilbox">
+        <h2>Books to be Issued</h2>
+        <div id="ilcontainer"></div>
+        <button id="closeil">Close</button>
+       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+<script src="dashboard.js"></script>
+</body>
+</html>
